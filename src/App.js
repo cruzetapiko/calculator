@@ -71,7 +71,8 @@ function reducer(state, {type, payload}) {
        };
 
     case ACTIONS.CLEAR:
-      return {...state, currentOperand: '', previousOperand: '', operation: ''}
+      return {...state, currentOperand: null, previousOperand: null, operation: null}
+
 
     case ACTIONS.EQUALS:
       if (state.currentOperand == null || 
